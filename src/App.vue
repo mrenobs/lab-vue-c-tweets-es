@@ -1,12 +1,23 @@
 <template>
   <div class="app">
-    <Tweet />
-  </div>
+    <Tweet :tweets="tweets" ></Tweet>
+    <Tweet :tweets="tweets" ></Tweet>
+    <Tweet :tweets="tweets" ></Tweet>
+
+</div>
 </template>
 
 <script setup>
-  import { ref } from 'vue';
+  import { ref, props} from 'vue';
   import Tweet from './components/Tweet.vue';
+  import Timesampt from './components/Timestamp.vue';
+  import Profileimage from './components/Profileimage.vue';
+  import User from './components/User.vue';
+  import Message from './components/Message.vue';
+  import Action from './components/Action.vue';
+
+
+
 
   const tweets = ref([
     {
