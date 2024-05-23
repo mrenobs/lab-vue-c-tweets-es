@@ -16,17 +16,17 @@ defineProps({
 <template>
 
 
-  <div class="tweet">
-    <Profileimage :image="user.image"></Profileimage>
+  <div class="tweet" v-for="tweets in tweets">
+    <Profileimage :image="user.image">{{ tweets.user.image }}</Profileimage>
 
     <div class="body" >
 
       <div class="top">
-        <User :userData="Userdata"></User>
-        <Timestamp :time="timeStamp"></Timestamp>
+        <User :userData="Userdata">{{ tweets.user.name }}</User>
+        <Timestamp :time="timeStamp">{{tweets.user.handle }}</Timestamp>
       </div>
 
-      <Message :message="message"></Message>
+      <Message :message="message">{{tweets.message}}</Message>
 
       <Action></Action>
     </div>
