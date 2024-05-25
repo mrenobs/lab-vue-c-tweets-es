@@ -1,14 +1,14 @@
 <script setup>
 
-defineProps({
-    timeStamp: Object
+defineProps ({
+    timeStamps: Object
 
 })
 </script>
 
 <template>
 
-<span class="timestamp">{{tweets[0].timestamp}}</span>
+<span class="timestamp">{{timeStamps.timestamp}}</span>
 
 </template> 
 

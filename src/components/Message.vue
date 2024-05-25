@@ -4,7 +4,7 @@
 
 <script setup>
 defineProps({
-    message: Object
+    mensaje: Object
 })
 
 
@@ -14,7 +14,7 @@ defineProps({
 <template>
     
     <p class="message">
-        {{tweets[0].message}}
+        {{mensaje.message}}
 
     </p>
 

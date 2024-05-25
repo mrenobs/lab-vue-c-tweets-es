@@ -6,7 +6,7 @@ import Message from './Message.vue'
 import Action from './Action.vue';
 
 defineProps({
-  tweets: Object
+  tweet: Object
 
 });
 
@@ -16,17 +16,17 @@ defineProps({
 <template>
 
 
-  <div class="tweet" v-for="tweets in tweets">
-    <Profileimage :image="user.image">{{ tweets.user.image }}</Profileimage>
+  <div class="tweet">
+    <Profileimage :image="tweet.image"></Profileimage>
 
     <div class="body" >
 
       <div class="top">
-        <User :userData="Userdata">{{ tweets.user.name }}</User>
-        <Timestamp :time="timeStamp">{{tweets.user.handle }}</Timestamp>
+        <User :userData="tweet.user"></User>
+        <Timestamp :time="tweet.timeStamp"></Timestamp>
       </div>
 
-      <Message :message="message">{{tweets.message}}</Message>
+      <Message :message="tweet.message"></Message>
 
       <Action></Action>
     </div>

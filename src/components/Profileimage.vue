@@ -4,7 +4,7 @@
 
 <script setup>
 defineProps({
-    user: Object
+    imagen: Object
 })
 
 
@@ -13,7 +13,7 @@ defineProps({
 
 <template>
  <img
-      src= {{tweets[0].user.image}}
+      src= {{imagen.image}}
       class="profile"
       alt="profile"
     />

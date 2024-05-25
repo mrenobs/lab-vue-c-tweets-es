@@ -11,8 +11,8 @@ userData: Object
 <template>
           
     <span class="user">
-        <span class="name" >{{tweets[0].user.name}}</span>
-        <span class="handle">{{tweets[0].user.handle }}</span>
+        <span class="name" >{{ userData.name }}</span>
+        <span class="handle">{{ userData.handle }}</span>
     </span>
     
 
