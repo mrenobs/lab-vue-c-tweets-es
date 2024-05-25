@@ -23,7 +23,7 @@ defineProps({
 
       <div class="top">
         <User :userData="tweet.user"></User>
-        <Timestamp :time="tweet.timeStamp"></Timestamp>
+        <Timestamp :time="tweet.timestamp"></Timestamp>
       </div>
 
       <Message :message="tweet.message"></Message>

@@ -4,7 +4,7 @@
 
 <script setup>
 defineProps({
-    mensaje: Object
+    mensaje: String
 })
 
 
@@ -14,7 +14,7 @@ defineProps({
 <template>
     
     <p class="message">
-        {{mensaje.message}}
+        {{mensaje}}
 
     </p>
 
