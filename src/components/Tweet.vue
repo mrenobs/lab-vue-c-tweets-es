@@ -3,7 +3,7 @@ import Profileimage from './Profileimage.vue';
 import User from  './user.vue';
 import Timestamp from  './Timestamp.vue';
 import Message from './Message.vue'
-import Action from './Action.vue';
+import Action from './Actions.vue';
 
 defineProps({
   tweet: Object
