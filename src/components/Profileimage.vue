@@ -4,7 +4,7 @@
 
 <script setup>
 defineProps({
-    imagen: Object
+    imagen: String
 })
 
 
